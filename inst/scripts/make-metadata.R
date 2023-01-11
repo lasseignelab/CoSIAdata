@@ -1,0 +1,35 @@
+### =========================================================================
+### CoSIAdata metadata 
+### -------------------------------------------------------------------------
+###
+
+meta <- data.frame(
+  Title = c(paste0("RNA-Sequencing ",
+                   "samples from The Cancer Genome Atlas")),
+  Description = c(paste0("BgeeDB RNA-seq Rsubread-summarized raw count data ",
+                         "for 7706 tumor samples, represented as an ", 
+                         "ExpressionSet. R data representation derived from ",
+                         "GEO accession GSE62944.")),
+  BiocVersion = c("3.2", "3.3", "3.3", "3.6", "3.6"),
+  Genome = rep("hg19", 5), 
+  SourceType = rep("tar.gz", 5), 
+  SourceUrl = "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE62944",
+  SourceVersion = "Jan 28 2015",
+  Species = "Homo sapiens",
+  TaxonomyId = 9606,
+  Coordinate_1_based = TRUE,
+  DataProvider = "GEO",
+  Maintainer = "Bioconductor Package Maintainer <maintainer@bioconductor.org>",
+  RDataClass = c("ExpressionSet", rep("SummarizedExperiment", 4)) ,
+  DispatchClass = c(rep("Rda",5)),
+  RDataPath = c(paste0("GSE62944/GSE62944_GSM1536837_TCGA_20.Illumina.",
+                       "tumor_Rsubread_FeatureCounts.ExpressionSet.Rda"), 
+                "GSE62944/GSE62944_GSM1536837_TCGA_24.tumor_Rsubread_FeatureCounts.SE.Rda", 
+                "GSE62944/GSE62944_GSM1697009_TCGA_24.normal_Rsubread_FeatureCounts.SE.Rda", 
+                "GSE62944/GSE62944_GSM1536837_TCGA_24.tumor_Rsubread_FeatureCounts.SE.V2.Rda", 
+                "GSE62944/GSE62944_GSM1697009_TCGA_24.normal_Rsubread_FeatureCounts.SE.V2.Rda"),
+  Tags = "",
+  Notes = c("","","","Updated for newer verison of SummarizedExperiment", "Updated for newer verison of SummarizedExperiment")
+)
+
+write.csv(meta, file="inst/extdata/metadata.csv", row.names=FALSE)

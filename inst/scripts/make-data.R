@@ -67,5 +67,5 @@ Fly<-Species_Dataframe(fly_specific, "Drosophila_melanogaster")
 Nematode<-Species_Dataframe(nematode_specific, "Caenorhabditis_elegans")
 
 #Merge Species Files
-Experimental_Hub_File <- rbind(Zebrafish,Rat,Mouse,Human,Fly,Nematode)
-save(Experimental_Hub_File, file = "EH_Data.Rda")
+GEx_Bulk_Bgee<- rbind(Zebrafish,Rat,Mouse,Human,Fly,Nematode)
+save(GEx_Bulk_Bgee, file = "GEx_Bulk_Bgee.Rda")
