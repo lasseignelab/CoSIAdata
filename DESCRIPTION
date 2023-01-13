@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: 
 Maintainer: 
 URL: 
-biocViews: ExperimentHub, RNASeqData
+biocViews: ExperimentHub, RNASeqData, ExperimentData, PackageTypeData, OrganismData
 Depends:
 Suggests:
 License: 
