@@ -1,0 +1,60 @@
+---
+title: "CoSIAdata, an Experimental Hub Package for work with CoSIA"
+output: 
+  BiocStyle::html_document:
+    toc: true
+    toc_float: true
+    fig_width: 5
+    
+vignette: >
+  %\VignetteIndexEntry{CoSIAdata}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+author: Anisha Haldar, Vishal H. Oza
+date: 2023-01-13
+---
+
+```{css, echo=FALSE}
+.row {
+  margin-left: -200px;
+}
+```
+
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+**** 
+# add a description about the data package below (sample is added to hold space)
+
+TCGA re-processed RNA-Seq data from 9264 Tumor Samples and 741 normal samples
+across 24 cancer types and made it available via [GSE62944](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE62944) from GEO.
+This data is also available as an ExpressionSet from ExperimentHub and
+can be used for Differential Expression Analysis.
+
+In the below example, we show how one can download this dataset from 
+ExperimentHub.
+
+```{r get-CoSIAdata}
+library(ExperimentHub)
+eh = ExperimentHub()
+query(eh , "CoSIAdata")
+```
+
+One can then extract the data for this using
+```{r download-tcga}
+tcga_data <- eh[["EH1"]]
+```
+The different cancer types can be accessed using -
+
+```{r cancer-types}
+ head(phenoData(tcga_data)$CancerType)
+```
+Above we show only the top 6 Cancer subtypes.
+
+

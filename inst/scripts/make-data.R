@@ -60,12 +60,14 @@ nematode_specific <- Bgee_Download("Caenorhabditis_elegans","rna_seq")
 
 #Get Species Experimental Hub Data
 Zebrafish<-Species_Dataframe(zebrafish_specific, "Danio_rerio")
+save(Zebrafish, file = "CoSIAdata/GEx_Bgee/EH_Dr.Rda")
 Mouse<-Species_Dataframe(mouse_specific, "Mus_musculus")
+save(Mouse, file = "CoSIAdata/GEx_Bgee/EH_Mm.Rda")
 Rat<-Species_Dataframe(rat_specific, "Rattus_norvegicus")
+save(Rat, file = "CoSIAdata/GEx_Bgee/EH_Rn.Rda")
 Human<-Species_Dataframe(human_specific, "Homo_sapiens")
+save(Human, file = "CoSIAdata/GEx_Bgee/EH_Hs.Rda")
 Fly<-Species_Dataframe(fly_specific, "Drosophila_melanogaster")
+save(Fly, file = "CoSIAdata/GEx_Bgee/EH_Dm.Rda")
 Nematode<-Species_Dataframe(nematode_specific, "Caenorhabditis_elegans")
-
-#Merge Species Files
-GEx_Bulk_Bgee<- rbind(Zebrafish,Rat,Mouse,Human,Fly,Nematode)
-save(GEx_Bulk_Bgee, file = "GEx_Bulk_Bgee.Rda")
+save(Nematode, file = "CoSIAdata/GEx_Bgee/EH_Ce.Rda")
