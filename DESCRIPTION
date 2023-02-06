@@ -2,7 +2,7 @@ Package: CoSIAdata
 Type: Experimental Hub Package
 Title: VST normalized RNA-Sequencing data with annotations for multiple species samples from Bgee"
 Version: 0.1.0
-Author: 
+Author: Anisha Haldar, Vishal H. Oza, Amanda D. Clark, Brittany N. Lasseigne
 Maintainer: 
 URL: 
 biocViews: ExperimentHub, RNASeqData, ExperimentData, PackageTypeData, OrganismData
