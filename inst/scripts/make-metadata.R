@@ -57,12 +57,12 @@ meta <- data.frame(
   Maintainer = "Brittany Lasseigne <bnp0001@uab.edu>",
   RDataClass = NA ,
   DispatchClass = c(rep("Rda",6)),
-  RDataPath = c("CoSIAdata/GEx_Bgee/EH_Hs.Rda", 
+  RDataPath = c("CoSIAdata/GEx_Bgee/EH_Ce.Rda", 
+                "CoSIAdata/GEx_Bgee/EH_Dm.Rda", 
+                "CoSIAdata/GEx_Bgee/EH_Dr.Rda", 
                 "CoSIAdata/GEx_Bgee/EH_Hs.Rda", 
-                "CoSIAdata/GEx_Bgee/EH_Hs.Rda", 
-                "CoSIAdata/GEx_Bgee/EH_Hs.Rda", 
-                "CoSIAdata/GEx_Bgee/EH_Hs.Rda",
-                "CoSIAdata/GEx_Bgee/EH_Hs.Rda")
+                "CoSIAdata/GEx_Bgee/EH_Mm.Rda",
+                "CoSIAdata/GEx_Bgee/EH_Rn.Rda")
 )
 
 write.csv(meta, file="inst/extdata/metadata.csv", row.names=FALSE)
