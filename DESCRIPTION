@@ -12,6 +12,7 @@ URL:
 biocViews: ExperimentHub, RNASeqData, ExperimentData, PackageTypeData, OrganismData
 Depends:
 Suggests:
+Encoding: UTF-8
 License: MIT + file LICENSE
 VignetteBuilder: knitr
 NeedsCompilation: no
