@@ -1,5 +1,5 @@
 ---
-title: "CoSIAdata, an Experimental Hub Package for work with CoSIA"
+title: "CoSIAdata, an Experimental Hub Package of VST Stabilized RNA-Seq Data that accompanies the CoSIA Package"
 output: 
   BiocStyle::html_document:
     toc: true
@@ -10,8 +10,8 @@ vignette: >
   %\VignetteIndexEntry{CoSIAdata}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
-author: Anisha Haldar, Vishal H. Oza
-date: 2023-01-13
+author: Anisha Haldar, Vishal H. Oza, Amanda D. Clark, Brittany N. Lasseigne
+date: 2023-02-13
 ---
 
 ```{css, echo=FALSE}
@@ -30,15 +30,11 @@ knitr::opts_chunk$set(
 
 
 **** 
-# add a description about the data package below (sample is added to hold space)
+# CoSIAdata Introduction
 
-TCGA re-processed RNA-Seq data from 9264 Tumor Samples and 741 normal samples
-across 24 cancer types and made it available via [GSE62944](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE62944) from GEO.
-This data is also available as an ExpressionSet from ExperimentHub and
-can be used for Differential Expression Analysis.
+VST Stabilized RNA-Seq Expression Data from Bgee across six species and more than 132 tissues are made available through the CoSIAdata package. The six species available through the package are Homo sapiens, Mus musculus, Rattus norvegicus, Danio rerio, Drosophila melanogaster, and Caenorhabditis elegans. Each species is found in an individualized Rdata file from ExperimentHub and can be used in conjunction with CoSIA, a visualization tool for comparing across species using gene expression metrics. CoSIAdata individualized datasets provide the Anatomical Entity Name, Anatomical Entity Id, Ensembl Id, and Experimental Id to accompany the VST Stabilized RNA-Seq Expression Data allowing for species, tissue, and gene-specific analysis to be conducted. 
 
-In the below example, we show how one can download this dataset from 
-ExperimentHub.
+The example below demonstrates the process of downloading these datasets from Experimental Hub.
 
 ```{r get-CoSIAdata}
 library(ExperimentHub)
@@ -48,13 +44,11 @@ query(eh , "CoSIAdata")
 
 One can then extract the data for this using
 ```{r download-tcga}
-tcga_data <- eh[["EH1"]]
+
 ```
-The different cancer types can be accessed using -
+The different species types can be accessed using -
 
 ```{r cancer-types}
- head(phenoData(tcga_data)$CancerType)
 ```
-Above we show only the top 6 Cancer subtypes.
 
 

@@ -54,7 +54,7 @@ meta <- data.frame(
   TaxonomyId = c(9606, 10090, 10116, 7955, 7227, 6239),
   Coordinate_1_based = FALSE,
   DataProvider = "Bgee",
-  Maintainer = "Brittany Lasseigne <bnp0001@uab.edu>",
+  Maintainer = "Amanda D. Clark <amanda@freshairfamily.org>",
   RDataClass = c(rep("data.frame",6)) ,
   DispatchClass = c(rep("Rda",6)),
   RDataPath = c("CoSIAdata/GEx_Bgee/EH_Ce.RData", 
