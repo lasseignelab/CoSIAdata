@@ -40,7 +40,7 @@ meta <- data.frame(
                          "Expression Data and Annotations for 1,923,064",
                          "Caenorhabditis elegans samples across 5 tissues represented as",
                          "an RData file. R data representation derieved from Bgee.")),
-  BiocVersion = rep("3.14", 6),
+  BiocVersion = rep("3.17", 6),
   Genome = c("GRCh38.p13", "GRCm38.p6", "Rnor_6.0", "GRCz11", "BDGP6.28", "WBcel235"), 
   SourceType = rep("tar.gz", 6), 
   SourceUrl = c("https://bgee.org/ftp/bgee_v15_0/download/processed_expr_values/rna_seq/Homo_sapiens/Homo_sapiens_RNA-Seq_read_counts_TPM_FPKM.tar.gz",
@@ -57,12 +57,12 @@ meta <- data.frame(
   Maintainer = "Amanda D. Clark <amanda@freshairfamily.org>",
   RDataClass = c(rep("data.frame",6)) ,
   DispatchClass = c(rep("Rda",6)),
-  RDataPath = c("CoSIAdata/GEx_Bgee/EH_Ce.RData", 
-                "CoSIAdata/GEx_Bgee/EH_Dm.RData", 
+  RDataPath = c("CoSIAdata/GEx_Bgee/EH_Hs.RData", 
+                "CoSIAdata/GEx_Bgee/EH_Mm.RData", 
+                "CoSIAdata/GEx_Bgee/EH_Rn.RData", 
                 "CoSIAdata/GEx_Bgee/EH_Dr.RData", 
-                "CoSIAdata/GEx_Bgee/EH_Hs.RData", 
-                "CoSIAdata/GEx_Bgee/EH_Mm.RData",
-                "CoSIAdata/GEx_Bgee/EH_Rn.RData")
+                "CoSIAdata/GEx_Bgee/EH_Dm.RData",
+                "CoSIAdata/GEx_Bgee/EH_Ce.RData")
 )
 
 write.csv(meta, file="inst/extdata/metadata.csv", row.names=FALSE)
