@@ -10,7 +10,7 @@ Author: Anisha Haldar, Vishal H. Oza, Amanda D. Clark, Brittany N. Lasseigne
 Maintainer: Amanda D. Clark <amanda@freshairfamily.org>
 biocViews: ExperimentHub, RNASeqData, ExperimentData, PackageTypeData, OrganismData
 Depends: 
-  R (>= 4.2.1),
+  R (>= 4.2.2),
   ExperimentHub (>= 2.6.0)
 Suggests:
   BiocStyle (>= 2.26.0)
