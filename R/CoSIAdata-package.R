@@ -21,10 +21,9 @@
 #' 
 #' @examples
 #' library(ExperimentHub)
-#' query(ExperimentHub(), "CoSIAdata")
-#'
-#' CoSIAdata <- ExperimentHub()[[""]]
-#' CoSIAdata
+#' eh = ExperimentHub()
+#' query(eh, "CoSIAdata")
+#' eh[["EH7863"]]
 "_PACKAGE"
 
 ## usethis namespace: start

@@ -1,5 +1,4 @@
 Package: CoSIAdata
-Type: ExperimentHub Package
 Title: VST normalized RNA-Sequencing data with annotations for multiple species samples from Bgee
 Description: Variance Stabilized Transformation of Read Counts derived from Bgee RNA-Seq Expression Data. 
   Expression Data includes annotations and is across 6 species (Homo sapiens, Mus musculus, Rattus norvegicus,
@@ -10,10 +9,11 @@ Author: Anisha Haldar, Vishal H. Oza, Amanda D. Clark, Brittany N. Lasseigne
 Maintainer: Amanda D. Clark <amanda@freshairfamily.org>
 biocViews: ExperimentHub, RNASeqData, ExperimentData, PackageTypeData, OrganismData
 Depends: 
-  R (>= 4.2.2),
+  R (>= 4.2.0),
   ExperimentHub (>= 2.6.0)
 Suggests:
-  BiocStyle (>= 2.26.0)
+  BiocStyle (>= 2.26.0),
+  knitr (>= 1.42)
 Encoding: UTF-8
 License: MIT + file LICENSE
 VignetteBuilder: knitr

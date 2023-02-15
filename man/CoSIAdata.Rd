@@ -25,16 +25,8 @@ Transformation of Read Counts in order to quantify the RNA-Seq Expression.
 }
 \examples{
 library(ExperimentHub)
-query(ExperimentHub(), "CoSIAdata")
-
-CoSIAdata <- ExperimentHub()[[""]]
-CoSIAdata
-}
-\seealso{
-Useful links:
-\itemize{
-  \item \url{}
-}
-
+eh = ExperimentHub()
+query(eh, "CoSIAdata")
+eh[["EH7863"]]
 }
 \keyword{internal}
