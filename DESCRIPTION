@@ -5,12 +5,36 @@ Description: Variance Stabilized Transformation of Read Counts derived from Bgee
   Danio rerio, Drosophila melanogaster, and Caenorhabditis elegans) and across more than 132 tissues. The data
   is represented as a RData files and is available in ExperimentHub.
 Version: 0.1.0
-Author: Anisha Haldar, Vishal H. Oza, Amanda D. Clark, Brittany N. Lasseigne
-Maintainer: Amanda D. Clark <amanda@freshairfamily.org>
-biocViews: ExperimentHub, RNASeqData, ExperimentData, PackageTypeData, OrganismData
+Authors@R:
+  c(person(given = "Anisha",
+           family = "Haldar",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-1395-9793")),
+    person(given = c("Vishal", "H."),
+           family = "Oza",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-6990-0267")),
+    person(given = c("Amanda", "D."),
+           family = "Clark",
+           role = c("cre","aut"),
+           email = "amanda@freshairfamily.org",
+           comment = c(ORCID = "0000-0002-1186-3114")),
+    person(given = c("Nathaniel", "S."),
+           family = "DeVoss",
+           role = "aut",
+           comment = c(ORCID = "0000-0003-0465-2770")),
+    person(given = c("Brittany", "N."),
+           family = "Lasseigne",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-1642-8904")))
+biocViews: ExperimentHub, RNASeqData, ExperimentData, PackageTypeData, 
+  OrganismData, Tissue,Caenorhabditis_elegans_Data, Danio_rerio_Data, 
+  Drosophila_melanogaster_Data, Homo_sapiens_Data, Mus_musculus_Data, 
+  Rattus_norvegicus_Data, SequencingData, ExpressionData
 Depends: 
-  R (>= 4.2.0),
-  ExperimentHub (>= 2.6.0)
+  R (>= 4.3.0),
+  ExperimentHub (>= 2.6.0),
+  qpdf (>= 1.3.0)
 Suggests:
   BiocStyle (>= 2.26.0),
   knitr (>= 1.42)

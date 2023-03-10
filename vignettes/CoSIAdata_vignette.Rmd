@@ -44,7 +44,11 @@ query(eh , "CoSIAdata")
 
 One can then extract the species specific data.
 ```{r download-c.elegan_data}
-eh[["EH7863"]]
+head(eh[["EH7863"]])
 ```
 
+Session Info
+```{r}
+sessionInfo()
+```
 

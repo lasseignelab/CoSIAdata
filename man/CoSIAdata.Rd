@@ -29,4 +29,16 @@ eh = ExperimentHub()
 query(eh, "CoSIAdata")
 eh[["EH7863"]]
 }
+\author{
+\strong{Maintainer}: Amanda D. Clark \email{amanda@freshairfamily.org} (\href{https://orcid.org/0000-0002-1186-3114}{ORCID})
+
+Authors:
+\itemize{
+  \item Anisha Haldar (\href{https://orcid.org/0000-0002-1395-9793}{ORCID})
+  \item Vishal H. Oza (\href{https://orcid.org/0000-0001-6990-0267}{ORCID})
+  \item Nathaniel S. DeVoss (\href{https://orcid.org/0000-0003-0465-2770}{ORCID})
+  \item Brittany N. Lasseigne (\href{https://orcid.org/0000-0002-1642-8904}{ORCID})
+}
+
+}
 \keyword{internal}
