@@ -15,7 +15,7 @@
 #' expression analysis.
 #' 
 #' Researchers might find this data useful as it provides Variance Stabilized 
-#' Transformation of Read Counts in order to quantify the RNA-Seq Expression.
+#' Transformation of read counts to compare RNA-Seq expression profiles.
 #' @import qpdf
 #' @format Multiple dataframes
 #' 

@@ -32,14 +32,25 @@ knitr::opts_chunk$set(
 **** 
 # CoSIAdata Introduction
 
-VST Stabilized RNA-Seq Expression Data from Bgee across six species and more than 132 tissues are made available through the CoSIAdata package. The six species available through the package are Homo sapiens, Mus musculus, Rattus norvegicus, Danio rerio, Drosophila melanogaster, and Caenorhabditis elegans. Each species is found in an individualized Rdata file from ExperimentHub and can be used in conjunction with CoSIA, a visualization tool for comparing across species using gene expression metrics. CoSIAdata individualized datasets provide the Anatomical Entity Name, Anatomical Entity Id, Ensembl Id, and Experimental Id to accompany the VST Stabilized RNA-Seq Expression Data allowing for species, tissue, and gene-specific analysis to be conducted. 
+VST Stabilized RNA-Seq Expression Data from Bgee across six species and more 
+than 132 tissues are made available through the CoSIAdata package. 
+The six species available through the package are *Homo sapiens*, 
+*Mus musculus*, *Rattus norvegicus*, *Danio rerio*, *Drosophila melanogaster*, 
+and *Caenorhabditis elegans*. Each species is found in an individualized Rdata 
+file from ExperimentHub and can be used in conjunction with CoSIA, a 
+visualization tool for comparing across species using gene expression metrics. 
+CoSIAdata's individualized datasets provide the Anatomical Entity Name, 
+Anatomical Entity Id, Ensembl Id, and Experimental Id to accompany the 
+VST Stabilized RNA-Seq Expression Data allowing for species, tissue, and 
+gene-specific analysis to be conducted. 
 
-The example below demonstrates the process of downloading these datasets from Experimental Hub.
+The example below demonstrates the process of downloading these 
+datasets from Experimental Hub.
 
 ```{r get-CoSIAdata}
 library(ExperimentHub)
 eh <- ExperimentHub()
-query(eh , "CoSIAdata")
+query(eh, "CoSIAdata")
 ```
 
 One can then extract the species specific data.
