@@ -7,24 +7,24 @@ output:
     fig_width: 5
     
 vignette: >
-  %\VignetteIndexEntry{CoSIAdata}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+    %\VignetteIndexEntry{CoSIAdata}
+    %\VignetteEngine{knitr::rmarkdown}
+    %\VignetteEncoding{UTF-8}
 author: Anisha Haldar, Vishal H. Oza, Amanda D. Clark, Brittany N. Lasseigne
 date: 2023-02-13
 ---
 
 ```{css, echo=FALSE}
 .row {
-  margin-left: -200px;
+    margin-left: -200px;
 }
 ```
 
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
+    collapse = TRUE,
+    comment = "#>"
 )
 ```
 
