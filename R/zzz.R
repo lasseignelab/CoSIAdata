@@ -11,11 +11,11 @@
 #'
 .onLoad <- function(libname, pkgname) {
     fl <- system.file("extdata", "metadata.csv", package = "CoSIAdata")
-    species <- read.csv(fl, stringsAsFactors = FALSE)$Species
+    species <- utils::read.csv(fl, stringsAsFactors = FALSE)$Species
     # createHubAccessors updated function from ExperimentHub to match by species
     createHubAccessors <- function(pkgname, species) {
         ## map species to ExperimentHub identifiers
-        eh <- query(ExperimentHub(), pkgname)
+        eh <-AnnotationHub::query(ExperimentHub(), pkgname)
         ## hubAccessorFactory function created by ExperimentHub
         .hubAccessorFactory <- function(ehid) {
             force(ehid)
