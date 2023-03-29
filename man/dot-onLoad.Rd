@@ -2,7 +2,13 @@
 % Please edit documentation in R/zzz.R
 \name{.onLoad}
 \alias{.onLoad}
-\title{Resource Name Function}
+\alias{Caenorhabditis_elegans}
+\alias{Danio_rerio}
+\alias{Drosophila_melanogaster}
+\alias{Homo_sapiens}
+\alias{Mus_musculus}
+\alias{Rattus_norvegicus}
+\title{.onLoad Function for Resource Name}
 \usage{
 .onLoad(libname, pkgname)
 }
@@ -18,6 +24,8 @@ a set of functions specific to each resource species
 Resource Name Function
 }
 \examples{
-CoSIAdata::`Danio rerio`()
-
+CoSIAdata::Danio_rerio()
+}
+\references{
+Morgan M, Shepherd L (2022). ExperimentHub: Client to access ExperimentHub resources. R package version 2.6.0.
 }

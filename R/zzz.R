@@ -1,5 +1,12 @@
 #' Resource Name Function
-#'
+#' @title .onLoad Function for Resource Name
+#' @aliases Caenorhabditis_elegans
+#' @aliases Danio_rerio
+#' @aliases Drosophila_melanogaster
+#' @aliases Homo_sapiens
+#' @aliases Mus_musculus
+#' @aliases Rattus_norvegicus
+#' 
 #' @param libname The name of the Library.
 #' @param pkgname The name of the Package.
 #'
@@ -7,16 +14,20 @@
 #' @export
 #'
 #' @examples
-#' CoSIAdata::`Danio rerio`()
-#'
+#' CoSIAdata::Danio_rerio()
+#' @references Morgan M, Shepherd L (2022). ExperimentHub: Client to access ExperimentHub resources. R package version 2.6.0.
+
+# onLoad function creates functions for each resource specific to the species
+# this code has been adapted from ExperimentHub
 .onLoad <- function(libname, pkgname) {
-    fl <- system.file("extdata", "metadata.csv", package = "CoSIAdata")
+    fl <- system.file("extdata", "metadata.csv", package = pkgname)
     species <- utils::read.csv(fl, stringsAsFactors = FALSE)$Species
-    # createHubAccessors updated function from ExperimentHub to match by species
+    species <- sub(" ", "_", species)
+    # createHubAccessors adapted function from ExperimentHub to match by species
     createHubAccessors <- function(pkgname, species) {
         ## map species to ExperimentHub identifiers
         eh <-AnnotationHub::query(ExperimentHub(), pkgname)
-        ## hubAccessorFactory function created by ExperimentHub
+        ## hubAccessorFactory function adapted by ExperimentHub
         .hubAccessorFactory <- function(ehid) {
             force(ehid)
             function(metadata = FALSE) {
@@ -40,12 +51,12 @@
             }
             ehid
         }, character(1))
-        ## create and export accessor functions in package namespace
+        ## create and export accessory functions in package namespace
         ns <- asNamespace(pkgname)
         for (i in seq_along(species)) {
             assign(species[[i]], .hubAccessorFactory(ehids[[i]]), envir = ns)
             namespaceExport(ns, species[[i]])
         }
     }
-    createHubAccessors("CoSIAdata", species)
+    createHubAccessors(pkgname, species)
 }
