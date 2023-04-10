@@ -1,7 +1,7 @@
 #' @keywords internal
 #' @name CoSIAdata
 #' @aliases CoSIAdata
-#' @import ExperimentHub
+#' @importFrom  ExperimentHub ExperimentHub
 #' @description
 #' CoSIAdata includes Variance Stabilized Transformation of Read Counts from
 #' Bgee RNA-Seq Expression Data across six species (Homo sapiens, Mus musculus,
@@ -16,7 +16,6 @@
 #'
 #' Researchers might find this data useful as it provides Variance Stabilized
 #' Transformation of read counts to compare RNA-Seq expression profiles.
-#' @import qpdf
 #' @format Multiple dataframes
 #'
 #' @examples

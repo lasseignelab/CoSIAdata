@@ -29,6 +29,13 @@ eh <- ExperimentHub()
 query(eh, "CoSIAdata")
 eh[["EH7863"]]
 }
+\seealso{
+Useful links:
+\itemize{
+  \item Report bugs at \url{https://github.com/lasseignelab/CoSIAdata/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Amanda D. Clark \email{amanda@freshairfamily.org} (\href{https://orcid.org/0000-0002-1186-3114}{ORCID})
 
