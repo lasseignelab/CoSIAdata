@@ -45,6 +45,7 @@ Suggests:
   knitr (>= 1.42)
 Encoding: UTF-8
 License: MIT + file LICENSE
+BugReports: https://github.com/lasseignelab/CoSIAdata/issues
 VignetteBuilder: knitr
 NeedsCompilation: no
 RoxygenNote: 7.2.3
