@@ -11,7 +11,6 @@
 #' @param pkgname The name of the Package.
 #'
 #' @return a set of functions specific to each resource species
-#' @export
 #'
 #' @examples
 #' CoSIAdata::Danio_rerio()
