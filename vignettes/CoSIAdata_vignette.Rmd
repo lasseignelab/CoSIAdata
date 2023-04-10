@@ -47,16 +47,28 @@ gene-specific analysis to be conducted.
 The example below demonstrates the process of downloading these 
 datasets from Experimental Hub.
 
-```{r get-CoSIAdata}
+##Installation of ExperimentHub
+In R:
+```{r install-and-load-ExperimentHub, eval = FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("ExperimentHub")
 library(ExperimentHub)
+```
+
+##Loading CoSIAdata
+```{r load-CoSIAdata, eval = FALSE}
 eh <- ExperimentHub()
 query(eh, "CoSIAdata")
 ```
 
-One can then extract the species specific data.
+##Extracting Species Specific data from CoSIA
+One can then extract the species specific data
 ```{r download-c.elegan_data}
 head(eh[["EH7863"]])
 ```
+
 
 Session Info
 ```{r}
