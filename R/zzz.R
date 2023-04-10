@@ -11,10 +11,12 @@
 #' @param pkgname The name of the Package.
 #'
 #' @return a set of functions specific to each resource species
-#'
+#' @internal [Function is an Internal Function for the CoSIAdata package]
+#' 
 #' @examples
 #' CoSIAdata::Danio_rerio()
-#' @references Morgan M, Shepherd L (2022). ExperimentHub: Client to access ExperimentHub resources. R package version 2.6.0.
+#' @references Morgan M, Shepherd L (2022). ExperimentHub: Client to access 
+#' ExperimentHub resources. R package version 2.6.0.
 
 # onLoad function creates functions for each resource specific to the species
 # this code has been adapted from ExperimentHub
