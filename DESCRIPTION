@@ -7,7 +7,7 @@ Description: Variance Stabilized Transformation of Read Counts derived from Bgee
     Drosophila melanogaster, and Caenorhabditis elegans) and across more than 
     132 tissues. The data is represented as a RData files and is available 
     in ExperimentHub.
-Version: 0.99.5
+Version: 0.99.6
 Authors@R:
   c(person(given = "Anisha",
            family = "Haldar",
