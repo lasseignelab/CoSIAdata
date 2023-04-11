@@ -74,7 +74,7 @@ head(eh[["EH7863"]])
 ## Accessing CoSIAdata Metadata
 
 To get a list of species in CoSIAdata and other information about the datasets, query `ExperimentHub` as below
-```{r}
+```{r eval = FALSE}
 eh <- ExperimentHub()
 query(eh, "CoSIAdata")
 ```
