@@ -20,24 +20,21 @@ Follow the instructions on [Bioconductor's Docker Help Page](https://www.biocond
 
 In R:
 
-``` r
-## Install BiocManager if necessary; Install ExperimentHub
+``` {r installation, eval=FALSE}
+## Install BiocManager if necessary; Install CoSIAdata
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install("ExperimentHub")
-
-library(ExperimentHub)
-
-## Store ExperimentHub in an object
-eh <- ExperimentHub()
+BiocManager::install("CoSIAdata")
+library(CoSIAdata)
 ```
 
-### Accessing CoSIAdata metadata
-
-``` r
-query(eh , "CoSIAdata")
+## Using CoSIAdata
+CoSIAdata has species-specific helper functions for accessing expression data
+```{r download-c.elegan_data, eval=FALSE}
+c_elegans_vst_counts <- CoSIAdata::Caenorhabditis_elegans()
 ```
+
 Check out the vignette for more information on accesssing specific data in CoSIAdata.
 
 ## Authors
